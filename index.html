@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Reach - News</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1 id="site-title">Global Reach</h1>
+  <button class="menu-btn" onclick="openMenu()">&#9776;</button>
+</header>
+
+<section class="banner">
+  <h2 id="banner-title">Latest News</h2>
+</section>
+
+<main>
+  <div class="news-container" id="news-container">
+    <!-- Noticias se cargarán aquí desde news.json -->
+  </div>
+</main>
+
+<!-- Modal de noticia -->
+<div class="modal" id="newsModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <img id="modal-img" src="" alt="" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+    <p id="modal-content"></p>
+  </div>
+</div>
+
+<!-- Menú hamburguesa lateral -->
+<div id="sideMenu" class="side-menu">
+  <span class="close-menu" onclick="closeMenu()">&times;</span>
+  <div id="menu-links">
+    <!-- Titulares se cargarán dinámicamente -->
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Global Reach | Privacy Policy</p>
+  <p>This website uses artificial intelligence to generate news and content.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
