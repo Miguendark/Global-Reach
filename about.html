@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Global Reach</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.6;
+    }
+    .about-container h1 {
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    .about-container h2 {
+      margin-top: 1.5rem;
+      color: #212529;
+    }
+  </style>
+</head>
+<body>
+
+<header>  <h1 id="site-title"><a href="index.html" style="color: inherit; text-decoration: none;">Global Reach</a></h1>
+  <button class="menu-btn" onclick="openMenu()">&#9776;</button>
+</header>
+
+<!-- Modal de noticias -->
+<div class="modal" id="newsModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <img id="modal-img" src="" alt="" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+    <p id="modal-content"></p>
+  </div>
+</div>
+
+<!-- Menú lateral -->
+<div id="sideMenu" class="side-menu">
+  <span class="close-menu" onclick="closeMenu()">&times;</span>
+
+  <!-- 🔹 Menú de navegación principal -->
+  <nav class="main-nav">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="contact.html">📩 Contact</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="terms.html">📜 Terms & Conditions</a>
+  </nav>
+
+  <hr>
+
+  <!-- 🔹 Titulares dinámicos de noticias -->
+  <div id="menu-links">
+    <!-- Se cargarán dinámicamente desde script.js -->
+  </div>
+</div>
+
+<main>
+  <div class="about-container">
+    <h1>About Us</h1>
+    <p><strong>Global Reach</strong> is a digital news platform created to deliver accurate, accessible, and insightful health and general news content to a worldwide audience.</p>
+
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to make high-quality health and wellness information available to everyone, while also covering global events that matter to our readers.
+      We aim to empower people with knowledge so they can make informed decisions about their health and daily lives.
+    </p>
+
+    <h2>Our Approach</h2>
+    <p>
+      Content on Global Reach is generated with the help of artificial intelligence, always supervised and reviewed to ensure clarity and accuracy. 
+      We prioritize user-friendly content that is easy to read and understand, while avoiding misleading claims.
+    </p>
+
+    <h2>Why Trust Us?</h2>
+    <ul>
+      <li>We follow Google AdSense and content guidelines strictly.</li>
+      <li>We are transparent about our use of AI in content creation.</li>
+      <li>We focus on educational and informational content only.</li>
+      <li>We never replace professional medical advice.</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>
+      We value feedback and collaboration. If you have questions, suggestions, or would like to partner with us, reach out:  
+      📧 <strong>contactfrasesfuegord@gmail.com</strong>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>frasesfuegord@gmail.com | 
+     <a href="privacy.html">Privacy Policy</a> | 
+     <a href="terms.html">Terms & Conditions</a> | 
+     <a href="about.html">About Us</a> | 
+     <a href="contact.html">Contact Us</a>
+  </p>
+  <p>This website uses artificial intelligence to generate news and content.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

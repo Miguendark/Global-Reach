@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - Global Reach</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .terms-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      line-height: 1.6;
+    }
+    .terms-container h1 {
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    .terms-container h2 {
+      margin-top: 1.5rem;
+      color: #212529;
+    }
+  </style>
+</head>
+<body>
+
+<header>  <h1 id="site-title"><a href="index.html" style="color: inherit; text-decoration: none;">Global Reach</a></h1>
+  <button class="menu-btn" onclick="openMenu()">&#9776;</button>
+</header>
+
+<!-- Modal de noticias -->
+<div class="modal" id="newsModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <img id="modal-img" src="" alt="" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+    <p id="modal-content"></p>
+  </div>
+</div>
+
+<!-- Menú lateral -->
+<div id="sideMenu" class="side-menu">
+  <span class="close-menu" onclick="closeMenu()">&times;</span>
+
+  <!-- 🔹 Menú de navegación principal -->
+  <nav class="main-nav">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="contact.html">📩 Contact</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="terms.html">📜 Terms & Conditions</a>
+  </nav>
+
+  <hr>
+
+  <!-- 🔹 Titulares dinámicos de noticias -->
+  <div id="menu-links">
+    <!-- Se cargarán dinámicamente desde script.js -->
+  </div>
+</div>
+
+<main>
+  <div class="terms-container">
+    <h1>Terms & Conditions</h1>
+    <p><strong>Effective Date:</strong> September 26, 2025</p>
+
+    <p>
+      Welcome to <strong>Global Reach</strong>. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions.
+      Please read them carefully. If you do not agree with these terms, please do not use our website.
+    </p>
+
+    <h2>1. Use of the Website</h2>
+    <p>
+      The content on this website is provided for general informational and educational purposes only.
+      In the health category, information should never replace professional medical advice.
+      Always consult a qualified healthcare provider regarding any medical concerns.
+    </p>
+
+    <h2>2. Intellectual Property</h2>
+    <p>
+      All content on this site, including articles, images, design, and logos, are the property of Global Reach
+      or its content providers and are protected by applicable copyright and trademark laws.
+      You may not copy, reproduce, or distribute content without our written permission.
+    </p>
+
+    <h2>3. User Responsibilities</h2>
+    <p>
+      By using our website, you agree not to:
+    </p>
+    <ul>
+      <li>Use the site for unlawful purposes.</li>
+      <li>Attempt to gain unauthorized access to our systems or interfere with the website’s functionality.</li>
+      <li>Post or share harmful, misleading, or offensive content through our contact forms.</li>
+    </ul>
+
+    <h2>4. Advertising & Third-Party Links</h2>
+    <p>
+      Our site displays advertisements, including those served by Google AdSense and other third-party providers.
+      We are not responsible for the content, products, or services offered by third parties.
+      Clicking on ads or external links is at your own risk.
+    </p>
+
+    <h2>5. Limitation of Liability</h2>
+    <p>
+      Global Reach is not responsible for any damages or losses arising from the use of this website
+      o reliance on the information provided. All use of this site is at your own risk.
+    </p>
+
+    <h2>6. Changes to Terms</h2>
+    <p>
+      We may update these Terms & Conditions from time to time. Any changes will be posted on this page with an updated effective date.
+    </p>
+
+    <h2>7. Governing Law</h2>
+    <p>
+      These terms are governed by and construed in accordance with the laws of your jurisdiction. 
+      By using this website, you submit to the exclusive jurisdiction of the local courts for the resolution of any disputes.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have any questions about these Terms & Conditions, please contact us at:  
+      📧 <strong>legalfrasesfuegord@gmail.com</strong>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Global Reach | 
+     <a href="privacy.html">Privacy Policy</a> | 
+     <a href="terms.html">Terms & Conditions</a> | 
+     <a href="about.html">About Us</a> | 
+     <a href="contact.html">Contact Us</a>
+  </p>
+  <p>This website uses artificial intelligence to generate news and content.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

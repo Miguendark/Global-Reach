@@ -1,58 +1,99 @@
-// Menú lateral
+// ===== Abrir / cerrar menú =====
 function openMenu() {
-  document.getElementById("sideMenu").style.width = "250px";
+  document.getElementById("sideMenu").style.width = "300px";
 }
 
 function closeMenu() {
   document.getElementById("sideMenu").style.width = "0";
 }
 
-// Modal de noticia
-function openModal(title, img, content) {
-  document.getElementById('modal-title').innerText = title;
-  document.getElementById('modal-img').src = img;
-  document.getElementById('modal-img').alt = title;
-  document.getElementById('modal-content').innerText = content;
-  document.getElementById('newsModal').style.display = 'flex';
+// ===== Noticias hardcodeadas para el menú =====
+const menuNews = [
+  {
+    title: "New Breakthrough in Heart Health",
+    img: "Images/New Breakthrough .jpg",
+    content: "Researchers discover promising treatment for cardiovascular disease."
+  },
+  {
+    title: "Mental Health Awareness Gains Momentum",
+    img: "Images/Mental Health .jpg",
+    content: "Communities are coming together to reduce stigma and improve care."
+  },
+  {
+    title: "AI in Medicine: The Future of Healthcare",
+    img: "images/AI in Medicine.jpg",
+    content: "Artificial intelligence is revolutionizing early diagnosis and patient care."
+  },
+   {
+    title: "Canada Launches Bold CanPlan to Tackle Mental Health Crisis",
+    img: "images/Canada Launches .jpg",
+    content: "Canadian officials unveiled a multi-billion-dollar program to expand therapy access."
+  }
+];
+
+// ===== Insertar noticias en el menú (orden inverso) =====
+const menuLinks = document.getElementById("menu-links");
+menuNews.slice().reverse().forEach((item) => {
+  const link = document.createElement("a");
+  link.href = "#";
+  link.className = "menu-news-item";
+  link.onclick = (e) => {
+    e.preventDefault();
+    openModal(item);
+    closeMenu();
+  };
+
+  // Miniatura
+  const img = document.createElement("img");
+  img.src = item.img;
+  img.alt = item.title;
+
+  // Texto
+  const span = document.createElement("span");
+  span.textContent = item.title;
+
+  // Construir el bloque
+  link.appendChild(img);
+  link.appendChild(span);
+
+  menuLinks.appendChild(link);
+});
+
+// ===== Modal de noticias =====
+function openModal(item) {
+  document.getElementById("modal-title").textContent = item.title;
+  document.getElementById("modal-img").src = item.image || item.img; // Soporta 'image' de news.json y 'img' de menuNews
+  document.getElementById("modal-content").textContent = item.content;
+  document.getElementById("newsModal").style.display = "block";
 }
 
 function closeModal() {
-  document.getElementById('newsModal').style.display = 'none';
+  document.getElementById("newsModal").style.display = "none";
 }
 
-// Cargar noticias desde news.json
-async function loadNews() {
-  try {
-    const response = await fetch('news.json');
-    const newsList = await response.json();
-    const container = document.getElementById('news-container');
-    const menu = document.getElementById('menu-links');
+// ===== Cargar noticias desde news.json para la página principal =====
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('news.json')
+        .then(response => response.json())
+        .then(data => {
+            displayMainNews(data); // 'data' es el array de news.json
+        })
+        .catch(error => console.error("Error loading main news:", error));
+});
 
-    newsList.forEach(item => {
-      // Tarjeta
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <img src="${item.image}" alt="${item.title}">
-        <h2>${item.title}</h2>
-        <p>${item.summary}</p>
-      `;
-      card.onclick = () => openModal(item.title, item.image, item.content);
-      container.appendChild(card);
+function displayMainNews(articles) {
+    const newsContainer = document.getElementById('news-container');
+    newsContainer.innerHTML = ''; // Limpiar contenido existente
 
-      // Menú lateral
-      const link = document.createElement('a');
-      link.href = "javascript:void(0)";
-      link.innerText = item.title;
-      link.onclick = () => { 
-        openModal(item.title, item.image, item.content); 
-        closeMenu(); 
-      };
-      menu.appendChild(link);
+    articles.forEach(article => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+            <img src="${article.image}" alt="${article.title}">
+            <h2>${article.title}</h2>
+            <p>${article.summary}</p>
+        `;
+        card.onclick = () => openModal(article); // Pasar el objeto completo del artículo
+        newsContainer.appendChild(card);
     });
-  } catch (error) {
-    console.error("Error loading news:", error);
-  }
 }
-
-loadNews();

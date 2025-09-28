@@ -1,33 +1,84 @@
 [
+    {
+      "title": "Why a Simple Daily Walk Could Transform U.S. and Canadian Health in 2025",
+      "summary": "Doctors reveal walking’s hidden benefits",
+      "image": "images/Why a Simple .jpg",
+      "content": "Medical experts in the U.S. and Canada highlight how just 30 minutes of daily walking can reduce heart disease, improve mood, and strengthen immunity. This simple activity is being promoted nationwide as a cost-free health revolution accessible to everyone."
+  },
   {
-    "title": "Why a Simple Daily Walk Could Transform U.S. and Canadian Health in 2025",
-    "summary": "Doctors reveal walking’s hidden benefits",
-    "image": "images/Why a Simple Daily Walk Could Transform U.S. and Canadian Health in 2025.jpg",
-    "content": "Medical experts in the U.S. and Canada highlight how just 30 minutes of daily walking can reduce heart disease, improve mood, and strengthen immunity. This simple activity is being promoted nationwide as a cost-free health revolution accessible to everyone."
-},
-{
-    "title": "Canada and U.S. Researchers Warn of Rising Vitamin D Deficiency Crisis",
-    "summary": "New study uncovers widespread deficiency risk",
-    "image": "images/Canada and U.S. Researchers Warn of Rising Vitamin D Deficiency Crisis.jpg",
-    "content": "Health researchers report that millions in North America are facing vitamin D deficiency, linked to bone weakness and immune issues. The findings urge citizens to increase safe sun exposure or consider supplements to prevent long-term public health consequences."
-},
-{
-    "title": "U.S. Hospitals Report Record Decline in Smoking Rates in 2025",
-    "summary": "Smoking hits lowest rate ever",
-    "image": "images/U.S. Hospitals Report Record Decline in Smoking Rates in 2025.jpg",
-    "content": "Public health officials in the United States celebrate the sharpest drop in smoking rates in decades. Education campaigns and stricter regulations have significantly reduced tobacco use, marking a major milestone in respiratory health improvements across the country."
-},
-{
-    "title": "Canada Launches Bold Plan to Tackle Mental Health Crisis by 2030",
-    "summary": "Nationwide strategy aims to improve mental health",
-    "image": "images/Canada Launches Bold Plan to Tackle Mental Health Crisis by 2030.jpg",
-    "content": "The Canadian government unveiled a comprehensive mental health initiative targeting anxiety, depression, and burnout. By expanding access to therapy and digital support, officials hope to strengthen community resilience and provide relief to millions struggling with daily challenges."
-},
-{
-    "title": "New Superfood Trend Sweeps Across U.S. and Canada: Seaweed Snacks",
-    "summary": "Seaweed becomes North America’s latest health craze",
-    "image": "images/New Superfood Trend Sweeps Across U.S..jpg",
-    "content": "Nutrition experts praise seaweed snacks for their high fiber, iodine, and antioxidant content. Already popular in Asia, seaweed is quickly becoming a staple in North American diets, promising better digestion and sustainable food options for health-conscious consumers."
-}
+      "title": "Canada and U.S. Researchers Warn of Rising Vitamin D Deficiency Crisis",
+      "summary": "New study uncovers widespread deficiency risk",
+      "image": "images/Canada and U.S. .jpg",
+      "content": "Health researchers report that millions in North America are facing vitamin D deficiency, linked to bone weakness and immune issues. The findings urge citizens to increase safe sun exposure or consider supplements to prevent long-term public health consequences."
+  },
+  {
+      "title": "U.S. Hospitals Report Record Decline in Smoking Rates in 2025",
+      "summary": "Smoking hits lowest rate ever",
+      "image": "images/U.S. Hospitals Report .jpg",
+      "content": "Public health officials in the United States celebrate the sharpest drop in smoking rates in decades. Education campaigns and stricter regulations have significantly reduced tobacco use, marking a major milestone in respiratory health improvements across the country."
+  },
+  {
+      "title": "Canada Launches Bold Plan to Tackle Mental Health Crisis by 2030",
+      "summary": "Nationwide strategy aims to improve mental health",
+      "image": "images/Canada Launches.jpg",
+      "content": "The Canadian government unveiled a comprehensive mental health initiative targeting anxiety, depression, and burnout. By expanding access to therapy and digital support, officials hope to strengthen community resilience and provide relief to millions struggling with daily challenges."
+  },
+  {
+      "title": "New Superfood Trend Sweeps Across U.S. and Canada: Seaweed Snacks",
+      "summary": "Seaweed becomes North America’s latest health craze",
+      "image": "images/New Superfood .jpg",
+      "content": "Nutrition experts praise seaweed snacks for their high fiber, iodine, and antioxidant content. Already popular in Asia, seaweed is quickly becoming a staple in North American diets, promising better digestion and sustainable food options for health-conscious consumers."
+  },
 
+  {
+    "title": "US Hospitals Report Record Decline in Smoking Rates",
+    "summary": "Nationwide anti-smoking efforts show historic success",
+    "image": "images/US Hospitals .jpg",
+    "content": "New federal health data reveals smoking rates in the U.S. hit their lowest level in history, with hospitals reporting fewer smoking-related admissions across major cities."
+  },
+  {
+    "title": "Canadian Study Links Daily Walking to Longer Lifespan",
+    "summary": "Simple activity boosts longevity by up to 7 years",
+    "image": "images/Canadian Study Links.jpg",
+    "content": "Researchers in Toronto found that walking 30 minutes daily significantly reduces cardiovascular risk and can extend lifespan, making it a top recommended public health habit."
+  },
+  {
+    "title": "US Doctors Warn of Rising Teen Vaping Concerns",
+    "summary": "Youth vaping rates trigger urgent national response",
+    "image": "images/US Doctors Warn of Rising.jpg",
+    "content": "Pediatric associations in the U.S. warn of health risks linked to teen vaping, calling for stricter regulations and more public awareness campaigns in schools."
+  },
+  {
+    "title": "U.S. Nutrition Experts Highlight Dangers of Ultra-Processed Foods",
+    "summary": "Study links processed diets to chronic illness",
+    "image": "images/U.S. Nutrition .jpg",
+    "content": "A new American study links high consumption of ultra-processed foods to obesity, diabetes, and heart disease, urging consumers to focus on whole food alternatives."
+  },
+  {
+    "title": "Canada’s Indigenous Communities Lead Wellness Programs",
+    "summary": "Traditional practices inspire modern health solutions",
+    "image": "images/Canada’s Indigenous.jpg",
+    "content": "Indigenous-led initiatives in Canada are combining cultural traditions with modern medicine to improve mental health and community wellness outcomes."
+  },
+  {
+    "title": "US Reports Record High in Childhood Obesity Rates",
+    "summary": "Experts call for urgent nutritional reforms",
+    "image": "images/U.S. Hospitals Report .jpg",
+    "content": "Health officials in the U.S. highlight alarming increases in childhood obesity, pushing for new school programs and healthier food policies nationwide."
+  },
+  {
+    "title": "Canadian Scientists Develop Breakthrough in Diabetes Research",
+    "summary": "New therapy shows promise for type 2 patients",
+    "image": "images/Canadian Scientists .jpg",
+    "content": "A Canadian lab announced experimental therapy that improves insulin sensitivity, offering hope for millions battling type 2 diabetes across North America."
+  },
+  {
+    "title": "American Sleep Studies Reveal Nationwide Insomnia Spike",
+    "summary": "Stress and screen use worsen sleep deprivation",
+    "image": "images/American Sleep .Jpg",
+    "content": "Researchers warn that insomnia rates are rising across the U.S., fueled by digital device use and workplace stress, urging better sleep hygiene practices."
+  }
 ]
+
+
+
