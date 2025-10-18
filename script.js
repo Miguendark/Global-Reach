@@ -16,7 +16,7 @@ const menuNews = [
   },
   {
     title: "Mental Health Awareness Gains Momentum",
-    img: "Images/Mental Health .jpg",
+    img: "images/Mental Health .jpg",
     content: "Communities are coming together to reduce stigma and improve care."
   },
   {
@@ -33,10 +33,17 @@ const menuNews = [
 
 // ===== Insertar noticias en el menú (orden inverso) =====
 const menuLinks = document.getElementById("menu-links");
+
+// Add news header
+const newsHeader = document.createElement("div");
+newsHeader.className = "news-header";
+newsHeader.textContent = "📰 Últimas Noticias";
+menuLinks.appendChild(newsHeader);
+
 menuNews.slice().reverse().forEach((item) => {
   const link = document.createElement("a");
   link.href = "#";
-  link.className = "menu-news-item";
+  link.className = "news-item";
   link.onclick = (e) => {
     e.preventDefault();
     openModal(item);
@@ -79,6 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
             displayMainNews(data); // 'data' es el array de news.json
         })
         .catch(error => console.error("Error loading main news:", error));
+
+    // Cerrar modal si el usuario hace clic fuera del contenido
+    window.onclick = function(event) {
+      const modal = document.getElementById("newsModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
 });
 
 function displayMainNews(articles) {
